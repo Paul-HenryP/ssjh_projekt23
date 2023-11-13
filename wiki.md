@@ -24,8 +24,7 @@ Meie projekt järgib struktureeritud kaustade korraldust, sealhulgas:
 
 ## Probleemide Lahendamine
 Tavalised probleemid, millega kasutajad võivad kokku puutuda, ja nende lahendused.
-
-## Kaasaaitamine
-Juhised teistele, kes soovivad projekti panustada.
+...
 
 ## Kasutatud allikad ja ressursid
+...
