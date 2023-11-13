@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+header {
+    background-color: #0072c6;
+    color: #fff;
+    padding: 20px;
+}
+
+#nav1 #nav2 a {
+    text-decoration-style: ;
+    text-decoration-color: ;
+    color: #fff;
+}
+
+h1 {
+    margin: 0;
+}
+nav a{
+    margin-top: 20px;
+    color: #fff;
+    text-decoration-style:solid ;
+    text-decoration-color: ;
+}
+nav {
+    margin: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #0072c6;
+}
+.button {
+    display: inline-block;
+    background-color: #0072c6;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 24px;
+    border: none;
+    border-radius: 10px;
+    margin: 20px;
+}
+.logo {
+    width: 150px;
+    height: 150px;
+}
