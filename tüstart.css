@@ -3,15 +3,16 @@ body {
     text-align: center;
 }
 header {
-    background-color: #0072c6;
-    color: #fff;
-    padding: 20px;
+    background-color: #fff;
+    background-size: cover;
+    color: #0072c6;
+    padding: 10px;
 }
 
 #nav1 #nav2 a {
     text-decoration-style: ;
     text-decoration-color: ;
-    color: #fff;
+    color: #0072c6;
 }
 
 h1 {
@@ -19,13 +20,16 @@ h1 {
 }
 nav a{
     margin-top: 20px;
-    color: #fff;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    color: #0072c6;
     text-decoration-style:solid ;
     text-decoration-color: ;
 }
 nav {
+    background-color: #fff;
     margin: 10px;
-    font-size: 20px;
+    font-size: 40px;
     text-decoration: none;
     color: #0072c6;
 }
@@ -34,12 +38,12 @@ nav {
     background-color: #0072c6;
     color: #fff;
     padding: 15px 30px;
-    font-size: 24px;
+    font-size: 50px;
     border: none;
     border-radius: 10px;
     margin: 20px;
 }
 .logo {
-    width: 150px;
+    width: 280px;
     height: 150px;
 }
