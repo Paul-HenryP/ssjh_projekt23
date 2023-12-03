@@ -5,14 +5,16 @@ body {
 header {
     background-color: #fff;
     background-size: cover;
-    color: #0072c6;
+    color: #2C5696;
+    /* color: #0072c6; */
     padding: 10px;
 }
 
 #nav1 #nav2 a {
     text-decoration-style: ;
     text-decoration-color: ;
-    color: #0072c6;
+    color: #2C5696;
+    /* color: #0072c6; */
 }
 
 h1 {
@@ -22,7 +24,8 @@ nav a{
     margin-top: 20px;
     margin-left: 1rem;
     margin-right: 1rem;
-    color: #0072c6;
+    /* color: #0072c6; */
+    color: #2C5696;
     text-decoration-style:solid ;
     text-decoration-color: ;
 }
@@ -31,11 +34,13 @@ nav {
     margin: 10px;
     font-size: 40px;
     text-decoration: none;
-    color: #0072c6;
+    color: #2C5696;
+    /* color: #0072c6; */
 }
 .button {
     display: inline-block;
-    background-color: #0072c6;
+    /* background-color: #0072c6; */
+    background-color: #2C5696;
     color: #fff;
     padding: 15px 30px;
     font-size: 50px;

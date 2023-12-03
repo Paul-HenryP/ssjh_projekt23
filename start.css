@@ -1,0 +1,64 @@
+#edgebuttons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+#edgebuttons button {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    padding: 15px 30px;
+    font-size: 50px;
+    border: none;
+    border-radius: 10px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+#create {
+    /* background-color: #466FAC; */
+    background-color: #2C5696;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+#create:hover {
+    background-color: #213f6e;
+}
+
+
+#delete {
+    /* background-color: #466FAC; */
+    background-color: #2C5696;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+#delete:hover {
+    background-color: #213f6e;
+}
+
+.deleteMe {
+    transition: background-color 0.5s ease;
+    background-color: #F63E3E;
+    animation: wiggle 0.5s ease-in-out infinite;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(-1deg);
+  }
+  50% {
+    transform: rotate(0);
+  }
+  75% {
+    transform: rotate(1deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}

@@ -1,13 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+	<link rel="stylesheet" href="üldine.css">
+	<link rel="stylesheet" href="tüstart.css">
+	<link rel="stylesheet" href="start.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>index file</title>
+	<script src="script.js"></script>
 </head>
+
 <body>
-    <h1>Siin on dashboard</h1>
-    <p>Siia tulevad erinevad nupud</p>
-    
+	<header>
+		<img src="download.png" alt="Tartu Ülikooli logo" class="logo">
+		<br><br />
+		<h1>Tere tulemast Tartu Ülikooli vaegnägijate lehele</h1>
+		<br><br />
+		<nav>
+			<a id="nav1" href="index.html">Avaleht</a>
+			<a id="nav2" href="tustart.html">TÜ</a>
+			<a id="nav3" href="#">Sätted</a>
+		</nav>
+	</header>
+	<main>
+		<h2>Vali leht, kuhu soovid minna:</h2>
+
+		<div id="button-container">
+			<!-- Buttons will be added here dynamically -->
+		</div>
+		<div id=edgebuttons>
+			<script src="https://kit.fontawesome.com/6df91bb95d.js" crossorigin="anonymous"></script>
+			<button id="create" onclick="createButton()">
+				<i class="fa-solid fa-plus"></i>
+			</button>
+			<button id="delete" onclick="changeColorAndEnableDelete()">
+				<i class="fa-solid fa-delete-left"></i>
+			</button>
+		</div>
+
+	</main>
 </body>
 </html>
