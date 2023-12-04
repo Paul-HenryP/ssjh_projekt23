@@ -11,8 +11,6 @@ header {
 }
 
 #nav1 #nav2 a {
-    text-decoration-style: ;
-    text-decoration-color: ;
     color: #2C5696;
     /* color: #0072c6; */
 }
@@ -27,7 +25,6 @@ nav a{
     /* color: #0072c6; */
     color: #2C5696;
     text-decoration-style:solid ;
-    text-decoration-color: ;
 }
 nav {
     background-color: #fff;
@@ -52,3 +49,4 @@ nav {
     width: 280px;
     height: 150px;
 }
+
