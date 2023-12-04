@@ -68,6 +68,11 @@
   }
 }
 
+#button-container {
+    max-width: 1200px;
+    margin: 0 auto; /* Center the container horizontally */
+}
+
 #button-container a {
     transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out; /* Specify the transition properties */
     opacity: 1; /* Initially set opacity to 1 */
@@ -81,10 +86,14 @@
     transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out; /* Specify the transition properties */
     visibility: hidden; /* Hide the button but keep the space in the layout */
 }
+/* .button { */
+/*     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3); */
+/* } */
 
 .search-field {
     padding: 10px;
     padding-left: 50px;
+    width: 550px;
     border: none;
     border-radius: 50px;
     font-size: 48px;
@@ -92,15 +101,20 @@
     background-color: #2C5696;
     outline: none;
     margin-bottom: 50px;
+    /* box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3); */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .search-field {
+        width: 450px; /* Adjust width for smaller screens */
+    }
+    .button {
+        font-size: 40px;
+    }
 }
 
 .search-field::placeholder {
-    color: white;
-    opacity: 0.6;
-}
-
-/* Adjustments for Firefox */
-.search-field:-moz-placeholder {
     color: white;
     opacity: 0.6;
 }
