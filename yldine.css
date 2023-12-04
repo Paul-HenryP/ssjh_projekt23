@@ -1,9 +1,14 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
+    /* background-color: #ffffff; */
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    /* background-image: linear-gradient(to bottom, #ffffff, #888888); */
 }
 header {
-    background-color: #fff;
+    /* background-color: #fff; */
     background-size: cover;
     color: #2C5696;
     /* color: #0072c6; */
@@ -27,7 +32,7 @@ nav a{
     text-decoration-style:solid ;
 }
 nav {
-    background-color: #fff;
+    /* background-color: #fff; */
     margin: 10px;
     font-size: 40px;
     text-decoration: none;
