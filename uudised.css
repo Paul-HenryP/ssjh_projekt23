@@ -1,0 +1,12 @@
+.social-media-container {
+    display: flex;
+    justify-content: space-around; /* Adjust spacing between elements */
+    align-items: flex-start; /* Align items at the top */
+  }
+  /* Embedded page styling */
+  .embedded-page {
+    width: 300px; /* Adjust width as needed */
+    height: 400px; /* Adjust height as needed */
+    overflow-y: scroll;
+    margin: 10px; /* Add margin for spacing */
+  }
