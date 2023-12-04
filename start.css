@@ -30,14 +30,19 @@
 
 
 #delete {
-    /* background-color: #466FAC; */
     background-color: #2C5696;
     color: #fff;
     transition: background-color 0.3s ease;
+    transition: color 0.3s ease;
 }
 #delete:hover {
     background-color: #213f6e;
 }
+#delete.deletepressed {
+    background-color: #213f6e;
+    color: #aaa;
+}
+
 
 .deleteMe {
     transition: background-color 0.5s ease;
@@ -61,4 +66,41 @@
   100% {
     transform: rotate(0);
   }
+}
+
+#button-container a {
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out; /* Specify the transition properties */
+    opacity: 1; /* Initially set opacity to 1 */
+    visibility: visible; /* Initially set visibility to visible */
+}
+
+/* Add specific styles for the hidden state */
+#button-container a.hide {
+    opacity: 0; /* Set opacity to 0 for hidden buttons */
+    pointer-events: none; /* Disable pointer events for hidden buttons */
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out; /* Specify the transition properties */
+    visibility: hidden; /* Hide the button but keep the space in the layout */
+}
+
+.search-field {
+    padding: 10px;
+    padding-left: 50px;
+    border: none;
+    border-radius: 50px;
+    font-size: 48px;
+    color: white;
+    background-color: #2C5696;
+    outline: none;
+    margin-bottom: 50px;
+}
+
+.search-field::placeholder {
+    color: white;
+    opacity: 0.6;
+}
+
+/* Adjustments for Firefox */
+.search-field:-moz-placeholder {
+    color: white;
+    opacity: 0.6;
 }
