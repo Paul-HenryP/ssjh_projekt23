@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Settings - Tartu University</title>
+    <link rel="stylesheet" href="settings.css">
+</head>
+<body>
+    <header>
+        <img src="download.png" alt="Tartu Ülikooli logo" class="logo">
+        <br><br/>
+        <h1>Tere tulemast Tartu Ülikooli vaegnägijate lehele</h1>
+        <br><br/>
+        <nav>
+            <a id="nav1" href="index.html">Avaleht</a>
+            <a id="nav2" href="tustart.html">TÜ</a>
+            <a id="nav3" href="settings.html">Sätted</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1 id="settings_h">Settings</h1>
+      <section>
+          <h2>Appearance</h2>
+          <button id="lightMode">Light Mode</button>
+          <button id="darkMode">Dark Mode</button>
+      </section>
+      <section>
+          <h2 id="settings_h2_text">Text Size</h2>
+          <input type="range" id="textSizeSlider" min="10" max="30" value="16">
+      </section>
+
+        <section>
+            <h2 id="settings_h2_lang">Language</h2>
+            <button id="switchLang">Switch to Estonian</button>
+        </section>
+    </main>
+
+  <script src="settings.js" defer></script>
+  <script src="lang.js"></script>
+</body>
+</html>
