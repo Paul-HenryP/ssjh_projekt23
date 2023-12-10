@@ -1,8 +1,7 @@
-///
 
-
+// laadi alguses
 document.addEventListener('DOMContentLoaded', () => {
-    // Load saved settings
+    // Laadi localStorage
     loadSettings();
 
     // Event listeners for settings
@@ -11,29 +10,30 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('textSizeSlider').addEventListener('input', setTextSize);
 });
 
+
+
+
+// Light/dark mode
 function setTheme(mode) {
     document.body.className = mode === 'dark' ? 'dark-mode' : 'light-mode';
     localStorage.setItem('theme', mode);
     propagateSettings();
 }
-
+// Teksti suurus
 function setTextSize() {
     const size = document.getElementById('textSizeSlider').value;
     document.documentElement.style.fontSize = size + 'px';
     localStorage.setItem('textSize', size);
     propagateSettings();
 }
-
-
-
-
+// Tõlkimine
+document.getElementById('switchLang').addEventListener('click', switchLanguage);
 function switchLanguage() {
   const currentLang = localStorage.getItem('language') === 'en' ? 'et' : 'en';
   localStorage.setItem('language', currentLang);
   updateTexts(currentLang);
   propagateSettings();
 }
-
 function updateTexts(lang) {
   for (const key in language[lang]) {
       const element = document.getElementById(key);
@@ -44,10 +44,8 @@ function updateTexts(lang) {
 }
 
 
-document.getElementById('switchLang').addEventListener('click', switchLanguage);
 
-
-
+// laadi localStorage - 2
 function loadSettings() {
     const savedTheme = localStorage.getItem('theme');
     const savedTextSize = localStorage.getItem('textSize');
@@ -71,11 +69,11 @@ function loadSettings() {
 
 
 function propagateSettings() {
-    // Send a message to other tabs to update settings
+    // Uuenda teised lehed (saada teave)
     localStorage.setItem('updateSettings', Date.now());
 }
 
-// Listener for settings update in other tabs
+// Kuula teabe
 window.addEventListener('storage', (event) => {
     if (event.key === 'updateSettings') {
         loadSettings();
@@ -86,8 +84,6 @@ window.addEventListener('storage', (event) => {
 });
 
 
-
-
-function clearLocalStorage() {
+function clearLocalStorage() { // debuggimise jaoks
     localStorage.clear();
 }

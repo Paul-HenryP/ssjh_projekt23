@@ -1,4 +1,4 @@
-/* This is an extension to your existing üldine.css styles */
+/* üldine.css sisaldab muutujaid */
 main {
     max-width: 800px;
     margin: auto;
@@ -43,7 +43,7 @@ form .button {
     cursor: pointer;
 }
 
-/* Dark mode styles */
+/* Dark mode */
 .dark-mode main {
     background: var(--background-color-dark);
     color: var(--text-color-dark);

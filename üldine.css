@@ -19,6 +19,7 @@ index.html värvid on ka start.css failis, nad jäid muutumata
     --button-bg-hover-color-dark: #303f9f; /
 }
 
+/* peamised */
 body {
     font-family: Arial, sans-serif;
     text-align: center;
@@ -82,12 +83,14 @@ nav a {
     background-color: var(--button-bg-hover-color-dark);
 }
 
+/* noolega nupp */
+
 #scrollToTop {
     position: fixed;
     bottom: 20px;
-    left: 20px; /* Changed from right to left */
-    background-color: var(--primary-color-dark); /* Dark background for both themes */
-    color: #ffffff; /* White text for visibility */
+    left: 20px; 
+    background-color: var(--primary-color-dark); 
+    color: #ffffff; 
     border: none;
     border-radius: 50%;
     width: 50px;
@@ -97,28 +100,25 @@ nav a {
     font-size: 24px;
     cursor: pointer;
     z-index: 1000;
-    display: none; /* Initially hidden */
+    display: none; /* mittenähtav */
 }
-
 .light-mode #scrollToTop {
-    background-color: transparent; /* Transparent background for light mode */
-    color: var(--primary-color); /* Blue text */
-    border: 2px solid var(--primary-color); /* Blue border */
+    background-color: transparent; 
+    color: var(--primary-color); 
+    border: 2px solid var(--primary-color); 
 }
-
-/* Ensure visibility in dark mode */
 .dark-mode #scrollToTop {
-    background-color: var(--background-color-dark); /* Dark background for dark mode */
+    background-color: var(--background-color-dark);
     color: #ffffff;
 }
 
-
+/* ? nupp */
 #helpButton {
     position: fixed;
     top: 20px;
     right: 20px;
-    background-color: var(--primary-color-dark); /* Dark background for both themes */
-    color: #ffffff; /* White text for visibility */
+    background-color: var(--primary-color-dark);
+    color: #ffffff; 
     border: none;
     border-radius: 50%;
     width: 40px;
@@ -127,93 +127,71 @@ nav a {
     cursor: pointer;
     z-index: 1000;
 }
-
-/* Specific styles for light mode */
 .light-mode #helpButton {
-    background-color: transparent; /* Transparent background for light mode */
-    color: var(--primary-color); /* Blue text */
-    border: 2px solid var(--primary-color); /* Blue border */
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color); 
 }
-
-/* Ensure visibility in dark mode */
 .dark-mode #helpButton {
-    background-color: var(--background-color-dark); /* Dark background for dark mode */
-    color: #ffffff; /* White text */
+    background-color: var(--background-color-dark);
+    color: #ffffff; 
 }
 
 
 
 
 
-
+/* abiaken */
 .modal {
-    /* Full viewport width and height to cover the entire window */
     width: 100vw;
     height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Darken the background */
+    background-color: rgba(0, 0, 0, 0.5); 
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 2000;
-    padding-top: 50px; /* Add some space at the top */
+    padding-top: 50px; 
     padding-bottom: 50px;
 
 }
-
 .modal-content {
-    /* Styles for modal content */
-    background-color: var(--background-color-light); /* For light mode */
+    background-color: var(--background-color-light); 
     padding: 20px;
     border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: left;
     margin: auto;
     width: 80%;
 }
-
-
-
-
-/* Style adjustments for paragraphs within the modal */
 .modal-content p {
-    font-size: 2rem; /* Smaller font size for a more elegant look */
-    line-height: 1.4;
-    margin-bottom: 1.5rem; /* Space between paragraphs */
-    max-width: 700px; /* Fixed width for paragraph text */
+    font-size: 2rem; 
+    line-height: 1.2;
+    margin-bottom: 1.5rem; 
+    max-width: 800px; /
 }
-
-
-/* Dark mode styles for modal */
 .dark-mode .modal-content {
-    background-color: var(--background-color-dark); /* Dark background for dark mode */
-    color: var(--text-color-dark); /* White text for dark mode */
+    background-color: var(--background-color-dark); 
+    color: var(--text-color-dark); 
 }
+/* abiakna sisu, elemendid */
 
-
-
-
-/* Close button style */
+/* abiakna x nupp */
 .close {
     float: right;
-    color: var(--primary-color); /* Light mode close button color */
+    color: var(--primary-color); 
     font-size: 1.5rem;
     font-weight: bold;
     right: 1rem;
     top: 0.5rem;
     cursor: pointer;
 }
-
-/* Dark mode close button style */
 .dark-mode .close {
-    color: var(--text-color-dark); /* Dark mode close button color */
+    color: var(--text-color-dark); 
 }
-
-/* Style for the Give Feedback button within the modal */
-
-
+/* abiakna tagasiside nupp */
 #modal-feedback-button {
     background-color: var(--button-bg-color);
     color: var(--button-text-color);
@@ -222,9 +200,6 @@ nav a {
     border-radius: var(--border-radius);
     cursor: pointer;
 }
-
-
-/* Dark mode style for Give Feedback button */
 .dark-mode #modal-feedback-button {
     background-color: var(--primary-color-dark);
     color: var(--text-color-dark);
@@ -234,3 +209,31 @@ nav a {
 
 
 
+/* sättede ja tagasiside (modal) nupp  */ 
+.button1 {
+    background-color: var(--primary-color); 
+    color: #fff; 
+    padding: 10px 20px; 
+    font-size: 0.9rem; 
+    border: none;
+    border-radius: 20px; 
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.1s; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    text-align: center;
+    display: inline-block; 
+}
+.button1:hover {
+    background-color: var(--button-bg-hover-color); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+.button1:active {
+    transform: translateY(2px); 
+}
+.dark-mode .button1 {
+    background-color: var(--primary-color-dark);
+    color: var(--text-color-dark); 
+}
+.dark-mode .button1:hover {
+    background-color: var(--button-bg-hover-color-dark);
+}

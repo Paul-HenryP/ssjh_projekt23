@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feedback - Tartu University</title>
     <link rel="stylesheet" href="üldine.css">
-    <!-- Include a separate CSS file for feedback page styles if needed -->
     <link rel="stylesheet" href="feedback.css">
 </head>
 <body>
@@ -31,38 +30,33 @@
                     <p id="modal_tu">TU: access TU-related links, as well as news</p>
                     <p id="modal_settings">Settings: personalise page</p>
                     <p id="modal_feedback">Do you have propositions/feedback about using the page?</p>
-                    <button onclick="location.href='feedback.html'" id="modal_feedback_button">Give Feedback</button>
+                    <button onclick="location.href='feedback.html'" class="button1" id="modal_feedback_button">Give Feedback</button>
                 </div>
-            </div>
 		</nav>
 	</header>
 
     <main>
         <div class="feedback-container">
-            <h1>Feedback</h1>
-        <p>We value your feedback to improve our services. Please fill out the form below.</p>
+            <h1 id="feedback_h1">Feedback</h1>
+        <p id="feedback_p">We value your feedback to improve our services. Please fill out the form below.</p>
         <form id="feedbackForm">
-            <label for="name">Your Name:</label>
+            <label for="name" id="feedback_name">Your Name:</label>
             <input type="text" id="name" name="name" placeholder="Enter your name" required>
 
-            <label for="email">Your Email:</label>
+            <label for="email" id="feedback_email">Your Email:</label>
             <input type="email" id="email" name="email" placeholder="Enter your email" required>
 
-            <label for="feedback">Your Feedback:</label>
+            <label for="feedback" id="feedback_feedback">Your Feedback:</label>
             <textarea id="feedback" name="feedback" rows="6" placeholder="Your comments" required></textarea>
 
-            <button type="submit" class="button">Submit Feedback</button>
+            <button type="submit" class="button" id="feedback_button">Submit Feedback</button>
         </form>
         </div>
     </main>
 
-    <footer>
-        <!-- Your footer content here -->
-    </footer>
 
     <script src="lang.js" defer></script>
     <script src="üldine.js" defer></script>
-    <!-- Other scripts if needed -->
 
     <button id="scrollToTop" aria-label="Scroll to top" style="display: none;">
         ↑

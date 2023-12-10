@@ -201,19 +201,11 @@ document.getElementById("searchBox").addEventListener("keydown", function(event)
 
 
 
-
+// Uudised (laadija - üldine.js )
 function loadSocialMediaFeeds() {
-    // Load Facebook Feed
+    //Fb
     document.getElementById('facebookFeed').innerHTML = '<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ftartuylikool%2F&tabs=timeline&width=300&height=400&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height="100%" style="border:none;overflow:hidden" scrolling="yes" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>';
-
-    // Load Twitter Feed (consider using Twitter Publish if the widget does not work)
-    document.getElementById('twitterFeed').innerHTML = '<a class="twitter-timeline" href="https://twitter.com/unitartu?ref_src=twsrc%5Etfw">Tweets by unitartu</a>';
-    // Twitter widgets.js script should be loaded after setting innerHTML
-    if (window.twttr && window.twttr.widgets) {
-        window.twttr.widgets.load();
-    }
-
-    // Load Instagram Feed
+    // Insta
     document.getElementById('instagramFeed').innerHTML = '<iframe src="https://www.instagram.com/unitartu/embed/" width="320" height="480" frameborder="0" scrolling="no" allowtransparency="true"></iframe>';
 }
 
