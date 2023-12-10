@@ -55,3 +55,44 @@ nav {
     height: 150px;
 }
 
+.logo-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.greeting {
+    margin-top: 20px;
+}
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+    .button {
+        font-size: 20px;
+        padding: 15px;
+	margin: 9px;
+    }
+    nav {
+        margin: 10px;
+        font-size: 20px;
+    }
+    .logo {
+        width: 140px;
+        height: 80px;
+
+    }
+    .greeting {
+        font-size: 20px;
+        text-align: left;
+        margin: 10px;
+        max-width: 60%;
+    }
+
+    .logo-section {
+        display: flex;
+        margin-top: 20px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}

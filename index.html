@@ -25,18 +25,21 @@
 
 	</header>
 	<main>
-		<input type="text" id="searchBox" placeholder="Kuhu soovid minna..." class="search-field">
+		<div class="searchBoxContainer">
+			<input type="text" id="searchBox" placeholder="Otsing">
+			<div id=edgebuttons>
+				<button id="create" onclick="createButton()">
+					<i class="fa-solid fa-plus"></i>
+				</button>
+				<button id="delete" onclick="changeColorAndEnableDelete()">
+					<i class="fa-solid fa-trash-alt"></i>
+				</button>
+			</div>
+
+		</div>
 
 		<div id="button-container">
 			<!-- Buttons will be added here dynamically -->
-		</div>
-		<div id=edgebuttons>
-			<button id="create" onclick="createButton()">
-				<i class="fa-solid fa-plus"></i>
-			</button>
-			<button id="delete" onclick="changeColorAndEnableDelete()">
-				<i class="fa-solid fa-trash-alt"></i>
-			</button>
 		</div>
 
 	</main>
