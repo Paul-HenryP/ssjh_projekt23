@@ -9,27 +9,64 @@
 </head>
 <body>
     <header>
-        <img src="download.png" alt="Tartu Ülikooli logo" class="logo">
+        <img src="tulogo2.png" alt="Tartu Ülikooli logo" class="logo">
         <br><br/>
+        
         <h1 id="h_h1">Tere tulemast Tartu Ülikooli vaegnägijate lehele</h1>
         <br><br/>
         <nav>
             <a id="nav1" href="index.html">Avaleht</a>
             <a id="nav2" href="tustart.html">TÜ</a>
             <a id="nav3" href="settings.html">Sätted</a>
+            <button id="helpButton" aria-label="Help">
+				?
+			</button>
+			
+			<div id="helpModal" class="modal" style="display: none;">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p id="modal_home">Home page: add links relevant to you, delete the unnecessary ones</p>
+                    <p id="modal_tu">TU: access TU-related links, as well as news</p>
+                    <p id="modal_settings">Settings: personalise page</p>
+                    <p id="modal_feedback">Do you have propositions/feedback about using the page?</p>
+                    <button onclick="location.href='feedback.html'" id="modal_feedback_button">Give Feedback</button>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
         <h2 id="m_h2">Vali leht, kuhu soovid minna:</h2>
-        <a href="https://moodle.ut.ee/my/" class="button">Moodle📖</a>
-        <a href="https://ois2.ut.ee/#/dashboard" class="button">ÕIS2📋</a>
-        <a href="https://zulip.com/accounts/go/?next=%2Fsupport%2F" class="button">Zulip📖</a>
-        <a href="https://courses.cs.ut.ee" class="button">Courses📖</a>
-        <a href="https://www.campus.ee" class="button">Üliõüilasküla🏢</a>
-        <a href="https://ut.ee/et/sisu/oppetoetused-ja-stipendiumid" class="button">Toetused & Stipendiumid🔍</a>
+        <a id="moodle" href="https://moodle.ut.ee/my/" class="button">Moodle📖</a>
+        <a id="ois2" href="https://ois2.ut.ee/#/dashboard" class="button">ÕIS2📋</a>
+        <a id="zulip" href="https://zulip.com/accounts/go/?next=%2Fsupport%2F" class="button">Zulip📖</a>
+        <a id="courses" href="https://courses.cs.ut.ee" class="button">Courses📖</a>
+        <a id="campus" href="https://www.campus.ee" class="button">Üliõüilasküla🏢</a>
+        <a id="scholarships" href="https://ut.ee/et/sisu/oppetoetused-ja-stipendiumid" class="button">Toetused & Stipendiumid🔍</a>
     </main>
 
+    <button id="toggleNews" class="button">News</button>
+
+<div id="newsSection" class="social-media-container" style="display: none;">
+    <!-- Social Media Feeds -->
+    <!-- Facebook Feed -->
+    <div id="facebookFeed" class="embedded-page">
+        <!-- Facebook embedded content -->
+    </div>
+    <!-- Twitter Feed -->
+    <div id="twitterFeed" class="embedded-page">
+        <!-- Twitter embedded content -->
+    </div>
+    <!-- Instagram Feed -->
+    <div id="instagramFeed" class="embedded-page">
+        <!-- Instagram embedded content -->
+    </div>
+</div>
+
+    <button id="scrollToTop" aria-label="Scroll to top" style="display: none;">
+        ↑
+    </button>
 </body>
 <script src="lang.js"></script>
-<script src="script.js"></script>
+<script src="script.js" defer></script>
+<script src="üldine.js" defer></script>
 </html>

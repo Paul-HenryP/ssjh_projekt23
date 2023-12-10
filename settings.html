@@ -3,40 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <title>Settings - Tartu University</title>
+    <link rel="stylesheet" href="üldine.css">
     <link rel="stylesheet" href="settings.css">
 </head>
 <body>
     <header>
-        <img src="download.png" alt="Tartu Ülikooli logo" class="logo">
+        <img src="tulogo2.png" alt="Tartu Ülikooli logo" class="logo">
         <br><br/>
-        <h1>Tere tulemast Tartu Ülikooli vaegnägijate lehele</h1>
+        <h1 id="h_h1">Tere tulemast Tartu Ülikooli vaegnägijate lehele</h1>
         <br><br/>
         <nav>
             <a id="nav1" href="index.html">Avaleht</a>
             <a id="nav2" href="tustart.html">TÜ</a>
             <a id="nav3" href="settings.html">Sätted</a>
+            <button id="helpButton" aria-label="Help">
+				?
+			</button>
+			
+			<div id="helpModal" class="modal" style="display: none;">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p id="modal_home">Home page: add links relevant to you, delete the unnecessary ones</p>
+                    <p id="modal_tu">TU: access TU-related links, as well as news</p>
+                    <p id="modal_settings">Settings: personalise page</p>
+                    <p id="modal_feedback">Do you have propositions/feedback about using the page?</p>
+                    <button onclick="location.href='feedback.html'" id="modal_feedback_button">Give Feedback</button>
+                </div>
+            </div>
         </nav>
     </header>
 
     <main>
         <h1 id="settings_h">Settings</h1>
-      <section>
-          <h2>Appearance</h2>
+      <section class="setting-section">
+          <h2 id="settings_h2_app">Appearance</h2>
           <button id="lightMode">Light Mode</button>
           <button id="darkMode">Dark Mode</button>
       </section>
-      <section>
+      <section class="setting-section">
           <h2 id="settings_h2_text">Text Size</h2>
           <input type="range" id="textSizeSlider" min="10" max="30" value="16">
       </section>
 
-        <section>
+      <section class="setting-section">
             <h2 id="settings_h2_lang">Language</h2>
             <button id="switchLang">Switch to Estonian</button>
         </section>
+        <section class="setting-section">
+            <h2 id="settings_h2_feed">Feedback</h2>
+            <button id="settings_feedback" onclick="window.location.href = 'feedback.html'" >Provide feedback</button>
+        </section>
     </main>
+    <button id="scrollToTop" aria-label="Scroll to top" style="display: none;">
+        ↑
+    </button>
 
+    <script src="lang.js"></script>
+    <script src="üldine.js" defer></script>
   <script src="settings.js" defer></script>
-  <script src="lang.js"></script>
 </body>
 </html>

@@ -13,25 +13,38 @@
 
 <body>
 	<header>
-		<img src="download.png" alt="Tartu Ülikooli logo" class="logo">
+		<img src="tulogo2.png" alt="Tartu Ülikooli logo" class="logo">
 		<br><br />
-		<h1>Tere tulemast Tartu Ülikooli vaegnägijate lehele</h1>
+		<h1 id="h_h1">Tere tulemast Tartu Ülikooli vaegnägijate lehele</h1>
 		<br><br />
 		<nav>
 			<a id="nav1" href="index.html">Avaleht</a>
 			<a id="nav2" href="tustart.html">TÜ</a>
-			<a id="nav3" href="#">Sätted</a>
+			<a id="nav3" href="settings.html">Sätted</a>
+			<button id="helpButton" aria-label="Help">
+				?
+			</button>
+			
+			<div id="helpModal" class="modal" style="display: none;">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p id="modal_home">Home page: add links relevant to you, delete the unnecessary ones</p>
+                    <p id="modal_tu">TU: access TU-related links, as well as news</p>
+                    <p id="modal_settings">Settings: personalise page</p>
+                    <p id="modal_feedback">Do you have propositions/feedback about using the page?</p>
+                    <button onclick="location.href='feedback.html'" id="modal_feedback_button">Give Feedback</button>
+                </div>
+            </div>
 		</nav>
 	</header>
 	<main>
-		<input type="text" id="searchBox" placeholder="Kuhu soovid minna..." class="search-field">
-
+		<input type="text" id="searchBox" class="search-field" placeholder="">
 		<div id="button-container">
 			<!-- Buttons will be added here dynamically -->
 		</div>
 		<div id=edgebuttons>
 			<button id="create" onclick="createButton()">
-				<i class="fa-solid fa-plus"></i>
+				<i class="fa-ssolid fa-plus"></i>
 			</button>
 			<button id="delete" onclick="changeColorAndEnableDelete()">
 				<i class="fa-solid fa-trash-alt"></i>
@@ -39,7 +52,15 @@
 		</div>
 
 	</main>
+
+	<button id="scrollToTop" aria-label="Scroll to top" style="display: none;">
+        ↑
+    </button>
 </body>
-<script src="script.js"></script>
+<script src="lang.js"></script>
+<script src="script.js" defer></script>
+<script src="üldine.js" defer></script>
+
+
 
 </html>

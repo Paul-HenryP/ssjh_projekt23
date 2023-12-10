@@ -1,0 +1,71 @@
+/* This is an extension to your existing üldine.css styles */
+main {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: var(--background-color-light);
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+main h1 {
+    font-size: 2.5rem;
+}
+
+main p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+}
+
+form .button {
+    width: auto;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Dark mode styles */
+.dark-mode main {
+    background: var(--background-color-dark);
+    color: var(--text-color-dark);
+}
+
+.dark-mode form input,
+.dark-mode form textarea {
+    background: var(--background-color-dark);
+    color: var(--text-color-dark);
+    border: 1px solid var(--color-border-dark);
+}
+
+.dark-mode form .button {
+    background-color: var(--primary-color-dark);
+    color: var(--text-color-dark);
+}
+
+
+.feedback_container {
+    padding: 20px; /* Adjust padding as needed */
+}
+
+.dark-mode .feedback_container{
+    background-color: #1a1a1a;
+}

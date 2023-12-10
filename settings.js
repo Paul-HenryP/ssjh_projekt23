@@ -86,3 +86,8 @@ window.addEventListener('storage', (event) => {
 });
 
 
+
+
+function clearLocalStorage() {
+    localStorage.clear();
+}
