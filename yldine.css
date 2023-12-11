@@ -17,7 +17,7 @@ index.html värvid on ka start.css failis, nad jäid muutumata
     --background-color-dark: #262626; 
     --text-color-dark: #ffffff;
     --primary-color-dark: #374785; 
-    --button-bg-hover-color-dark: #303f9f; /
+    --button-bg-hover-color-dark: #303f9f; 
 }
 
 /* peamised */
@@ -199,7 +199,7 @@ h1 {
     font-size: 2rem; 
     line-height: 1.2;
     margin-bottom: 1.5rem; 
-    max-width: 800px; /
+    max-width: 800px; 
 }
 .dark-mode .modal-content {
     background-color: var(--background-color-dark); 
