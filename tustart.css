@@ -1,0 +1,45 @@
+/* Uudised, ülejäänud failis üldine.css (sh muuutujad)  */
+.social-media-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: flex-start; 
+    gap: 20px;
+    margin-top: 20px; 
+  }
+  
+  .embedded-page {
+    border: 1px solid #ccc; 
+    border-radius: 10px; 
+    overflow-y: auto; 
+    width: 300px; 
+    height: 400px; 
+    background-color: #fff; 
+  }
+  
+  #toggleNews {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    margin-top: 10px; 
+    background-color: var(--button-bg-color); 
+    color: var(--button-text-color); 
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  #toggleNews:hover {
+    background-color: var(--button-bg-hover-color); 
+  }
+  
+  /* Dark mode */
+  .dark-mode .social-media-container {
+    background-color: var(--background-color-dark);
+  }
+  .dark-mode .embedded-page {
+    background-color: var(--background-color-dark);
+    color: var(--text-color-dark); 
+  }
+  .dark-mode #toggleNews {
+    background-color: var(--primary-color-dark); 
+  }

@@ -19,7 +19,7 @@ const language = {
         nav3: 'Settings',
         h_h1: 'Welcome to the University of Tartu page for visually impaired people',
         m_h2: 'Choose where to go',
-        searchBox: 'Where do you want to go...',
+        searchBox: 'Search',
 
         // tustart.html 
         moodle: 'Moodle',
@@ -66,7 +66,7 @@ const language = {
         nav3: 'Sätted',
         h_h1: 'Tere tulemast Tartu Ülikooli vaegnägijate lehele',
         m_h2: 'Vali leht, kuhu soovid minna',
-        searchBox: 'Kuhu soovid minna...',
+        searchBox: 'Otsing',
 
         // tustart.html
         moodle: 'Moodle📖',

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-	<link rel="stylesheet" href="üldine.css">
-	<link rel="stylesheet" href="tüstart.css">
+	<link rel="stylesheet" href="yldine.css">
+	<link rel="stylesheet" href="tystart.css">
 	<link rel="stylesheet" href="start.css">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,10 +13,10 @@
 
 <body>
 	<header>
-		<img src="tulogo2.png" alt="Tartu Ülikooli logo" class="logo">
-		<br><br />
-		<h1 id="h_h1">Tere tulemast Tartu Ülikooli vaegnägijate lehele</h1>
-		<br><br />
+		<div class="logo-section">
+			<img src="tulogo2.png" alt="Tartu Ülikooli logo" class="logo">
+			<h1  id="h_h1" class="greeting">Tere tulemast Tartu Ülikooli vaegnägijate lehele</h1>
+		</div>
 		<nav>
 			<a id="nav1" href="index.html">Avaleht</a>
 			<a id="nav2" href="tustart.html">TÜ</a>
@@ -36,12 +36,26 @@
                 </div>
             </div>
 		</nav>
+
 	</header>
 	<main>
-		<input type="text" id="searchBox" class="search-field" placeholder="">
+
+		<div class="searchBoxContainer">
+			<input type="text" id="searchBox"  class="search-field" placeholder="" >
+			<div id=edgebuttons>
+				<button id="create" onclick="createButton()">
+					<i class="fa-solid fa-plus"></i>
+				</button>
+				<button id="delete" onclick="changeColorAndEnableDelete()">
+					<i class="fa-solid fa-trash-alt"></i>
+				</button>
+			</div>
+
+		</div>
 		<div id="button-container">
 			<!-- Nupud lisatakse dünaamiliselt siia -->
 		</div>
+
 		<div id=edgebuttons>
 			<button id="create" onclick="createButton()">
 				<i class="fa-ssolid fa-plus"></i>
@@ -59,8 +73,7 @@
 </body>
 <script src="lang.js"></script>
 <script src="script.js" defer></script>
-<script src="üldine.js" defer></script>
-
+<script src="yldine.js" defer></script>
 
 
 </html>

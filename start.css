@@ -1,4 +1,6 @@
 #edgebuttons {
+    display: flex;
+    flex-direction: column;
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -6,11 +8,10 @@
 
 #edgebuttons button {
     width: 100px;
-    height: 100px;
+    aspect-ratio: 1;
     display: flex;
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
-    padding: 15px 30px;
     font-size: 50px;
     border: none;
     border-radius: 10px;
@@ -28,7 +29,6 @@
     background-color: #213f6e;
 }
 
-
 #delete {
     background-color: #2C5696;
     color: #fff;
@@ -42,7 +42,6 @@
     background-color: #213f6e;
     color: #aaa;
 }
-
 
 .deleteMe {
     transition: background-color 0.5s ease;
@@ -68,10 +67,16 @@
   }
 }
 
+#button-container {
+    max-width: 1400px;
+    margin: 0 auto; /* Center the container horizontally */
+}
+
 #button-container a {
     transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out; /* Specify the transition properties */
     opacity: 1; /* Initially set opacity to 1 */
     visibility: visible; /* Initially set visibility to visible */
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9); */
 }
 
 /* Add specific styles for the hidden state */
@@ -81,26 +86,74 @@
     transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out; /* Specify the transition properties */
     visibility: hidden; /* Hide the button but keep the space in the layout */
 }
+/* .button { */
+/*     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3); */
+/* } */
 
-.search-field {
+#searchBox {
     padding: 10px;
     padding-left: 50px;
+    /* width: 550px; */
+    height: 100px;
+    box-sizing: border-box;
     border: none;
     border-radius: 50px;
     font-size: 48px;
     color: white;
     background-color: #2C5696;
     outline: none;
+}
+
+#searchBox::placeholder {
+    color: white;
+    opacity: 0.6;
+}
+
+.searchBoxContainer {
+    width: calc(100% - 120px); /* Adjust width for the search box */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: auto; /* Center the container horizontally */
+    width: auto; /* Center the container horizontally */
     margin-bottom: 50px;
+
 }
 
-.search-field::placeholder {
-    color: white;
-    opacity: 0.6;
-}
 
-/* Adjustments for Firefox */
-.search-field:-moz-placeholder {
-    color: white;
-    opacity: 0.6;
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+    .searchBoxContainer {
+	width: 80%;
+	margin-left: auto; /* Center the container horizontally */
+        margin-right: auto; /* Center the container horizontally */
+    }
+
+    #searchBox {
+        width: 80%;
+	height: 50px;
+        font-size: 25px;
+        padding-left: 15px;
+	border-radius: 50px 0 0 50px;
+    }
+
+    #edgebuttons button {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+	margin: 0;
+	border-radius: 0;
+    }
+
+    #edgebuttons {
+	    position: relative;
+	    flex-direction: row;
+	    margin: 0;
+	    bottom: 0;
+	    right: 0;
+    }
+    #delete {
+	padding-right: 10px;
+	border-radius: 0 50px 50px 0 !important;
+    }
 }
