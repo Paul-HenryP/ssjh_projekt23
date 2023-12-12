@@ -2,37 +2,38 @@
 <html lang="en">
 
 <head>
-	<link rel="stylesheet" href="yldine.css">
-	<link rel="stylesheet" href="tystart.css">
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>TÜ vaegnägijatele</title>
+    <link rel="stylesheet" href="yldine.css">
+    <link rel="stylesheet" href="tystart.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TÜ vaegnägijatele</title>
 </head>
 
 <body>
 
     <header>
         <div class="logo-section">
-			<img src="tulogo2.png" alt="Tartu Ülikooli logo" class="logo">
-			<h1  id="h_h1" class="greeting">Tere tulemast Tartu Ülikooli vaegnägijate lehele</h1>
-		</div>
+            <img src="ringlogo_est_eng_sinine.svg" alt="Tartu Ülikooli logo" class="logo">
+            <h1 id="h_h1" class="greeting">Tere tulemast Tartu Ülikooli vaegnägijate lehele</h1>
+        </div>
 
         <nav>
             <a id="nav1" href="index.html">Avaleht</a>
             <a id="nav2" href="tustart.html">TÜ</a>
             <a id="nav3" href="settings.html">Sätted</a>
             <button id="helpButton" aria-label="Help">
-				?
-			</button>
-			
-			<div id="helpModal" class="modal" style="display: none;">
+                ?
+            </button>
+
+            <div id="helpModal" class="modal" style="display: none;">
                 <div class="modal-content">
                     <span class="close">&times;</span>
                     <p id="modal_home">Home page: add links relevant to you, delete the unnecessary ones</p>
                     <p id="modal_tu">TU: access TU-related links, as well as news</p>
                     <p id="modal_settings">Settings: personalise page</p>
                     <p id="modal_feedback">Do you have propositions/feedback about using the page?</p>
-                    <button onclick="location.href='feedback.html'" class="button1" id="modal_feedback_button">Give Feedback</button>
+                    <button onclick="location.href='feedback.html'" class="button1" id="modal_feedback_button">Give
+                        Feedback</button>
                 </div>
             </div>
         </nav>
@@ -44,22 +45,23 @@
         <a id="zulip" href="https://zulip.com/accounts/go/?next=%2Fsupport%2F" class="button">Zulip📖</a>
         <a id="courses" href="https://courses.cs.ut.ee" class="button">Courses📖</a>
         <a id="campus" href="https://www.campus.ee" class="button">Üliõüilasküla🏢</a>
-        <a id="scholarships" href="https://ut.ee/et/sisu/oppetoetused-ja-stipendiumid" class="button">Toetused & Stipendiumid🔍</a>
+        <a id="scholarships" href="https://ut.ee/et/sisu/oppetoetused-ja-stipendiumid" class="button">Toetused &
+            Stipendiumid🔍</a>
     </main>
 
     <button id="toggleNews" class="button">News</button>
-    
-<div id="newsSection" class="social-media-container" style="display: none;">
-    <!-- Facebook -->
-    <div id="facebookFeed" class="embedded-page">
-        <!-- Facebook sisu -->
-    </div>
 
-    <!-- Instagram  -->
-    <div id="instagramFeed" class="embedded-page">
-        <!-- Instagram sisu -->
+    <div id="newsSection" class="social-media-container" style="display: none;">
+        <!-- Facebook -->
+        <div id="facebookFeed" class="embedded-page">
+            <!-- Facebook sisu -->
+        </div>
+
+        <!-- Instagram  -->
+        <div id="instagramFeed" class="embedded-page">
+            <!-- Instagram sisu -->
+        </div>
     </div>
-</div>
 
     <button id="scrollToTop" aria-label="Scroll to top" style="display: none;">
         ↑
@@ -69,4 +71,5 @@
     <script src="script.js" defer></script>
     <script src="yldine.js" defer></script>
 </body>
+
 </html>

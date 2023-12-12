@@ -14,8 +14,8 @@
 <body>
 	<header>
 		<div class="logo-section">
-			<img src="tulogo2.png" alt="Tartu Ülikooli logo" class="logo">
-			<h1  id="h_h1" class="greeting">Tere tulemast Tartu Ülikooli vaegnägijate lehele</h1>
+			<img src="ringlogo_est_eng_sinine.svg" alt="Tartu Ülikooli logo" class="logo">
+			<h1 id="h_h1" class="greeting">Tere tulemast Tartu Ülikooli vaegnägijate lehele</h1>
 		</div>
 		<nav>
 			<a id="nav1" href="index.html">Avaleht</a>
@@ -24,24 +24,27 @@
 			<button id="helpButton" aria-label="Help">
 				?
 			</button>
-			
+
 			<div id="helpModal" class="modal" style="display: none;">
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <p id="modal_home">Home page: add links relevant to you, delete the unnecessary ones</p>
-                    <p id="modal_tu">TU: access TU-related links, as well as news</p>
-                    <p id="modal_settings">Settings: personalise page</p>
-                    <p id="modal_feedback">Do you have propositions/feedback about using the page?</p>
-                    <button onclick="location.href='feedback.html'" class="button1" id="modal_feedback_button">Give Feedback</button>
-                </div>
-            </div>
+				<div class="modal-content">
+					<span class="close">&times;</span>
+					<p id="modal_home">Home page: add links relevant to you, delete the unnecessary
+						ones</p>
+					<p id="modal_tu">TU: access TU-related links, as well as news</p>
+					<p id="modal_settings">Settings: personalise page</p>
+					<p id="modal_feedback">Do you have propositions/feedback about using the page?
+					</p>
+					<button onclick="location.href='feedback.html'" class="button1"
+						id="modal_feedback_button">Give Feedback</button>
+				</div>
+			</div>
 		</nav>
 
 	</header>
 	<main>
 
 		<div class="searchBoxContainer">
-			<input type="text" id="searchBox"  class="search-field" placeholder="" >
+			<input type="text" id="searchBox" class="search-field" placeholder="">
 			<div id=edgebuttons>
 				<button id="create" onclick="createButton()">
 					<i class="fa-solid fa-plus"></i>
@@ -58,11 +61,12 @@
 	</main>
 
 	<button id="scrollToTop" aria-label="Scroll to top" style="display: none;">
-        ↑
-    </button>
+		↑
+	</button>
 
 	<script src="lang.js"></script>
 	<script src="script.js" defer></script>
 	<script src="yldine.js" defer></script>
 </body>
+
 </html>
