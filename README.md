@@ -1,2 +1,2 @@
 # ssjh_projekt23
-SSJH_veebilehe rühmatöö
+Sissejuhatus erialasse kursuse veebilehe rühmatöö.
